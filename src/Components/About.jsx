@@ -7,7 +7,6 @@ const AboutBg = styled.section`
     background-image: url(${BgAbout});
     background-size: cover;
     height: 90rem;
-    margin-bottom: 50rem;
     flex-direction: column;
     color: white;
     display: flex;
@@ -36,20 +35,34 @@ const AboutBg = styled.section`
         position: absolute;
         display: flex;
         justify-content: flex-end;
-        opacity: 80%;
+        opacity: 70%;
         z-index: 1;
         right: 0cm;
         top: 70%;
+
     }
 
-    @media (min-width: 280px) and (max-width:480px){
+    @media (min-width: 280px) and (max-width:720px){
         img{
             display: none;
         }
 
         .About-content{
             margin: 15rem auto;
+            
+            h1{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.8rem;
+            }
         }
+    }
+
+    @media (min-width: 720px){
+        margin-bottom: 15rem;
+ 
     }
 `;
 
@@ -58,7 +71,7 @@ const AboutContent = styled.div`
     max-width: 80%;
     display: flex;
     flex-direction: column;
-    margin: 10rem auto;
+    margin: 0 auto;
 
     text-align: center;
     z-index: 2;
@@ -69,6 +82,10 @@ const AboutContent = styled.div`
 
     p{
         font-size: large;
+    }
+
+    @media (min-width: 280px)and (max-width:1200px){
+        margin: 0 auto;
     }
 `;
 
@@ -85,8 +102,9 @@ const About = () => {
                 </div>
 
                 <img src = {Code} alt="CodeAbout" />
+            </AboutBg>
 
-                <AboutContent>
+            <AboutContent>
                     <h1>Why me?</h1>
 
                     <p>
@@ -96,8 +114,7 @@ const About = () => {
                     <p>
                         In adition I have complete some certifications to prove my skills in web design as a complement to my proyects to show you my capacities
                     </p>
-                </AboutContent>
-            </AboutBg>
+            </AboutContent>
         </>
      );
 }
