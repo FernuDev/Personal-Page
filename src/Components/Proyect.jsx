@@ -17,21 +17,27 @@ const ProyectCard = styled.div`
     }
 
     img{
-        height: 30rem;
         object-fit: cover;
         width: 100%;
     }
 
-    @media (min-width: 320px){
+    @media (min-width: 280px){
+
+        img{
+            height: 20rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
         .button-card{
             a{
                 font-size: 1.2rem;
             }
         }
 
-        p{
-            font-size: 1.2rem;
-        }
+        
     }
 
     @media (min-width: 1200px){
@@ -44,6 +50,11 @@ const ProyectCard = styled.div`
         p{
             font-size: 1.5rem;
             margin: 1rem 1rem;
+        }
+
+        img{
+            height: 30rem;
+
         }
     }
 `;

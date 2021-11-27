@@ -53,6 +53,8 @@ img{
     cursor: pointer;
 }
 
+
+
 .btn-secundario:hover{
     background-color: #8E29AF;
     transition: 1s;
@@ -60,4 +62,14 @@ img{
 .btn-principal:hover{
     background-color: var(--Blue);
     transition: 1s;
+}
+
+
+/* Media Queries de mobil */
+
+@media (min-width: 280px) AND (max-width:480px){
+    .btn-secundario{
+        font-size: 1rem;
+        padding: 1rem 0.2rem;
+    }
 }

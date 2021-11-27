@@ -84,6 +84,27 @@ const ProjectsGrid = styled.div`
 `;
 
 const Paginador = styled.div`
+
+    @media (min-width: 280px){
+        max-width: 25rem;
+        margin: 2rem auto;
+
+        .btn-page{
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+
+        .selectPage{
+            font-size: 0.8rem;
+        }
+
+        .disabled{
+        }
+
+       
+
+    }
+
     max-width: 45rem;
     display: flex;
     justify-content: center;
@@ -119,6 +140,8 @@ const Paginador = styled.div`
         background-color: gray;
         opacity: 70%;
     }
+
+   
 `;
 
 
@@ -208,12 +231,7 @@ const Proyects = () => {
         case 'Python':
             pageCount = Math.ceil(PythonP.length / n);
             break;
-
-        
     }
-
-    
-
     return ( 
         <ProyectsContainer>
             <Container> 

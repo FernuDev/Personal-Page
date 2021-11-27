@@ -18,22 +18,18 @@ const ProyectH = ({filtro}) => {
                 <FlexH className='project-h'>{filtro}<FaReact /></FlexH>
 
             );
-            break;
         case "HTML/CSS":
             return(
                 <FlexH className='project-h'>{filtro}<AiFillHtml5 /></FlexH>
             );
-            break;
         case "C++":
             return(
                 <FlexH className='project-h'>{filtro}<SiCplusplus /></FlexH>
             );
-            break;
         case "Python":
             return(
                 <FlexH className='project-h'>{filtro}<FaPython /></FlexH>
             );
-            break;
         default:
             return(
                 <FlexH className='project-h'>{filtro}<AiFillProject /></FlexH>

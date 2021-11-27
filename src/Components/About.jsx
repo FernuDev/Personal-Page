@@ -41,6 +41,16 @@ const AboutBg = styled.section`
         right: 0cm;
         top: 70%;
     }
+
+    @media (min-width: 280px) and (max-width:480px){
+        img{
+            display: none;
+        }
+
+        .About-content{
+            margin: 15rem auto;
+        }
+    }
 `;
 
 const AboutContent = styled.div`
