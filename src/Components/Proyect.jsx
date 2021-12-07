@@ -64,7 +64,7 @@ const Proyect = ({proyecto}) => {
     const { title, description, link, img } = proyecto;
     return ( 
         <ProyectCard>
-            <img src={img} alt={title}/>
+            <img src={img} alt={title} loading='lazy' />
             <h1>{title}</h1>
             <p>{description}</p>
             <div className='button-card'>

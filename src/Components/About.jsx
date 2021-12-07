@@ -64,6 +64,10 @@ const AboutBg = styled.section`
         margin-bottom: 15rem;
  
     }
+
+    @media (min-width: 2600px){
+        height: 150rem;
+    }
 `;
 
 const AboutContent = styled.div`

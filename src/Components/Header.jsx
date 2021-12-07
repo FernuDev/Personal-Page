@@ -25,6 +25,10 @@ const HeaderContainer = styled.header`
     @media (min-width: 720px){
         background-position: center;
     }
+
+    @media (min-width: 2560px){
+        height: 130rem;
+    }
 `;
 
 const HeaderContent = styled.div`
@@ -64,7 +68,7 @@ const Header = () => {
                         <h1>Hi everyone! I'm Luis Fernando</h1>
                         <p>I am passioned web developer who loves to make sites and web applications in react, also I love the continuous learning and every mistake about technnology</p>
 
-                        <button className='btn-principal'>Contact Me</button>
+                        <a className='btn-principal' href='#footer'>Contact Me</a>
                     </div>
                     <div>
                     </div>

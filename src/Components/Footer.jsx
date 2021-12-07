@@ -1,6 +1,8 @@
 
 import styled from "styled-components";
 
+import {AiFillGithub, AiFillLinkedin, AiOutlineMail} from 'react-icons/ai'
+
 const FooterBg = styled.footer`
     background-color: black;
     color: white;
@@ -15,28 +17,35 @@ const FooterBg = styled.footer`
     div{
         display: flex;
         align-items: center;
-        justify-content: space-space-around;
+        justify-content: space-around;
         gap: 2rem;
 
         color: white;
         font-size: 2rem;
 
-        a{
+        a, p{
             text-decoration: none;
             color: white;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
         }
+        
     }
+
+
 `;
 
 const Footer = () => {
+
     return ( 
-        <FooterBg>
+        <FooterBg id='footer'>
             <h1>Fernu</h1>
 
             <div>
-                <a href="">Github</a>
-                <a href="">LinkedIn</a>
-                <p>Email</p>
+                <a href="https://github.com/Fernu292"><AiFillGithub />Github</a>
+                <a href="https://www.linkedin.com/in/luis-fernando-n%C3%BA%C3%B1ez-rangel-885431213/"><AiFillLinkedin />LinkedIn</a>
+                <p> <AiOutlineMail />fernu292@gmail.com</p>
 
             </div>
         </FooterBg>

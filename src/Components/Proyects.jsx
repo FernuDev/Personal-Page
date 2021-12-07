@@ -85,9 +85,18 @@ const ProjectsGrid = styled.div`
 
 const Paginador = styled.div`
 
-    @media (min-width: 280px){
-        max-width: 25rem;
-        margin: 2rem auto;
+    max-width: 45rem;
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    margin-top: 5rem;
+    padding: 5rem;
+
+
+    @media (min-width: 280px) and (max-width: 720px){
+        max-width: 70%;
+        margin: 2rem 1rem;
+        align-self: center;
 
         .btn-page{
             padding: 0.5rem 1rem;
@@ -100,18 +109,18 @@ const Paginador = styled.div`
 
         .disabled{
         }
-
-       
+        
+        .paginador{
+            max-width: 60%;
+        }
+        
+        .selectPage{
+            font-size: 0.8rem;
+        }
 
     }
 
-    max-width: 45rem;
-    display: flex;
-    justify-content: center;
-    margin: 5rem auto;
-    margin-top: 5rem;
-    padding: 5rem;
-
+    
     ul{
         justify-content: center;
         margin: 0 auto;
@@ -132,15 +141,20 @@ const Paginador = styled.div`
         padding: 1rem 2rem;
     }
     
-    .btn-page{
-        padding: 1rem 3rem;
-    }
-
     .disabled{
         background-color: gray;
         opacity: 70%;
     }
 
+    .btn-page{
+        padding: 1rem 3rem;
+
+        a{
+            background-color: none;
+        }
+    }
+
+   
    
 `;
 
@@ -155,8 +169,7 @@ const Proyects = () => {
     const n = 6;
     const pagesVisited = pageNumber * n;
 
-    let pageCount = Math.ceil(Proyects.length / n);
-
+    let pageCount = 0;
     
     const handleSelect = (e)=>{
         setFiltro(e.target.value);
@@ -231,6 +244,9 @@ const Proyects = () => {
         case 'Python':
             pageCount = Math.ceil(PythonP.length / n);
             break;
+        default :
+            pageCount = Math.ceil(Proyects.length / n)
+
     }
     return ( 
         <ProyectsContainer>
@@ -299,7 +315,7 @@ const Proyects = () => {
                             previousLinkClassName = {'btn-page'}
                             nextLinkClassName = {'btn-page'}
                             pageLinkClassName = 'LinkClass'
-                            disabledLinkClassName = {'disabled'}
+                            disabledClassName = {'disabled'}
                         />
                     </Paginador>
                     
