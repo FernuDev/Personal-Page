@@ -1,9 +1,16 @@
 import React from 'react';
 
+import "../styles/App.css";
+
+//Components
+import Header from '../Layout/Header';
+
 const App = () => {
     return ( 
-       <h1>My personal page</h1>
-     );
+      <>
+        <Header />
+      </>
+    );
 }
  
 export default App;
