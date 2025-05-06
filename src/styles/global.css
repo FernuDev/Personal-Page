@@ -46,7 +46,7 @@
     height: 4px;
     background-color: oklch(71.4% 0.203 305.504);
     transform: translateX(-50%) scale(0); /* centra y colapsa */
-    animation: growLineCenter 0.6s ease-out forwards;
+    animation: growLineCenter 0.8s ease-out forwards;
 }
 
 @keyframes growLineCenter {
