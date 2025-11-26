@@ -336,19 +336,6 @@ export default function Home() {
             <div className="space-y-8">
               {[
                 {
-                  company: "Cardic Automotriz",
-                  period: "Mar 2025 – Actualidad",
-                  role: "Engineering Lead",
-                  description: "Diseño y desarrollo de ERP completo para el sector automotriz",
-                  achievements: [
-                    "Desarrollo de ERP desde cero con Python y Spring Boot",
-                    "Automatización de procesos de ventas y logística",
-                    "Implementación de APIs REST escalables",
-                    "Configuración de CI/CD y DevOps workflows",
-                  ],
-                  gradient: "from-cyan-500 to-blue-500",
-                },
-                {
                   company: "Antares Aerospace",
                   period: "Sept 2023 – Actualidad",
                   role: "Software Engineer",
